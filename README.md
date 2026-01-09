@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://books.google.com/books/content?id=ozeHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" width="300" alt="TensorFlow in Action Cover">
+    <img src="https://books.google.com/books/content?id=ozeHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" width="500" alt="TensorFlow in Action Cover">
     <h1>TensorFlow in Action 🚀</h1>
 
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.9-orange?logo=tensorflow)
