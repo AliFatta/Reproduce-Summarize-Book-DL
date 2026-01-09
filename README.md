@@ -1,12 +1,14 @@
-# TensorFlow in Action 🚀
 <div align="center">
     <img src="https://images.manning.com/book/9/b8a4369-6c30-4e32-832d-20999532560e/Ganegedara-TensorFlow-HI.png" width="400" alt="TensorFlow in Action Cover">
     <h1>TensorFlow in Action 🚀</h1>
+
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.9-orange?logo=tensorflow)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
 ![Status](https://img.shields.io/badge/Status-Complete-green)
 
-**Reference Book:** *TensorFlow in Action* by Thushan Ganegedara  
+<p><strong>Reference Book:</strong> <em>TensorFlow in Action</em> by Thushan Ganegedara</p>
+</div>
+
 **Repository Goal:** To reproduce, explain, and expand upon the concepts presented in the book, providing a hands-on guide to modern Deep Learning and MLOps using TensorFlow 2.x.
 
 ---
