@@ -1,96 +1,91 @@
-# TensorFlow in Action
+# TensorFlow in Action 🚀
+
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.9-orange?logo=tensorflow)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
+![Status](https://img.shields.io/badge/Status-Complete-green)
 
 **Reference Book:** *TensorFlow in Action* by Thushan Ganegedara  
-**Status:** In Progress 🚧
+**Repository Goal:** To reproduce, explain, and expand upon the concepts presented in the book, providing a hands-on guide to modern Deep Learning and MLOps using TensorFlow 2.x.
 
-## 1. Repository Overview
+---
+
+## 📖 Repository Overview
 
 ### Purpose
-This repository serves as a comprehensive, hands-on companion to Thushan Ganegedara's *TensorFlow in Action*. It aims to reproduce, explain, and summarize every chapter of the book to deepen theoretical understanding and practical skills in Machine Learning and Deep Learning using TensorFlow 2.
+This repository is a comprehensive companion to Thushan Ganegedara's *TensorFlow in Action*. It bridges the gap between theoretical machine learning concepts and production-ready code. Each notebook corresponds to a chapter in the book, containing detailed theoretical explanations, mathematical intuition, and runnable code examples.
 
 ### Learning Goals
-- **Master TensorFlow 2:** From basic tensors to complex production pipelines.
-- **Implement Core Algorithms:** Build CNNs, RNNs, and Transformers from scratch.
-- **Theory to Practice:** Bridge the gap between mathematical concepts and working code.
-- **Production Skills:** Learn MLOps, model deployment, and monitoring with TensorBoard and TFX.
+By working through this repository, you will:
+1.  **Master TensorFlow 2:** Transition from basic tensors to complex custom training loops and Keras layers.
+2.  **Build Core Architectures:** Implement CNNs (Inception, ResNet), RNNs (LSTM, GRU), and Transformers from scratch.
+3.  **Understand the "Why":** Gain intuition on *why* certain architectures work (e.g., Attention mechanisms, Residual connections).
+4.  **Deploy Models:** Learn end-to-end MLOps using TFX, Docker, and TensorFlow Serving.
 
-## 2. Chapter-by-Chapter Summary
+---
+
+## 📚 Chapter-by-Chapter Summary
 
 ### Part 1: Foundations of TensorFlow 2 and Deep Learning
 
-* **Chapter 1: The amazing world of TensorFlow**
-    * **Summary:** An introduction to the TensorFlow ecosystem, distinguishing between CPUs, GPUs, and TPUs. Covers the "when" and "why" of using TensorFlow versus other tools.
-    * **Skills:** Understanding hardware acceleration, defining the scope of TensorFlow projects.
+| Chapter | Title | Summary |
+| :--- | :--- | :--- |
+| **01** | [The Amazing World of TensorFlow](Chapter_01_The_amazing_world_of_TensorFlow.ipynb) | Introduction to the ecosystem. Benchmarking **CPU vs. GPU** performance for matrix operations to understand hardware acceleration. |
+| **02** | [TensorFlow 2](Chapter_02_TensorFlow_2.ipynb) | Deep dive into atomic building blocks: `tf.Tensor`, `tf.Variable`, and `tf.Operation`. Exploring **Eager Execution** vs. **Graph Execution** (`@tf.function`). |
+| **03** | [Keras and Data Retrieval](Chapter_03_Keras_and_data_retrieval_in_TensorFlow_2.ipynb) | Mastering the Keras APIs (**Sequential, Functional, Subclassing**) and building high-performance data pipelines with `tf.data`. |
+| **04** | [Dipping Toes in Deep Learning](Chapter_04_Dipping_toes_in_deep_learning.ipynb) | Building the "Big Three": **Autoencoders** (Dense), **Image Classifiers** (CNN), and **Forecasters** (RNN) from scratch. |
+| **05** | [State-of-the-Art: Transformers](Chapter_05_State_of_the_art_in_deep_learning_Transformers.ipynb) | Implementing the **Transformer** architecture (Encoder/Decoder) and **Self-Attention** mechanisms from the ground up without using pretrained libraries. |
 
-* **Chapter 2: TensorFlow 2**
-    * **Summary:** Deep dive into the core building blocks: `tf.Variable`, `tf.Tensor`, and `tf.Operation`. Explores how TensorFlow executes code under the hood (Eager Execution).
-    * **Skills:** Low-level TensorFlow manipulation, understanding computational graphs.
+### Part 2: Computer Vision - Looking at the World
 
-* **Chapter 3: Keras and data retrieval in TensorFlow 2**
-    * **Summary:** Introduction to the high-level Keras API (Sequential, Functional, Subclassing) and efficient data loading pipelines using `tf.data`.
-    * **Skills:** Building model architectures, creating scalable data input pipelines.
+| Chapter | Title | Summary |
+| :--- | :--- | :--- |
+| **06** | [Image Classification with CNNs](Chapter_06_Teaching_machines_to_see_Image_classification_with_CNNs.ipynb) | Building complex CNN architectures like **InceptionNet** (GoogLeNet) to classify images in the **Tiny ImageNet** dataset. |
+| **07** | [Teaching Machines to See Better](Chapter_07_Teaching_machines_to_see_better.ipynb) | Advanced techniques: **Transfer Learning**, Residual Connections, and **Grad-CAM** for model interpretability/visualization. |
+| **08** | [Image Segmentation](Chapter_08_Telling_things_apart_Image_segmentation.ipynb) | Pixel-level classification using the **U-Net** architecture. Implementing Transposed Convolutions and Skip Connections. |
 
-* **Chapter 4: Dipping toes in deep learning**
-    * **Summary:** Implementing fundamental neural networks: Fully Connected (Dense), Convolutional (CNN), and Recurrent (RNN).
-    * **Skills:** Building basic classifiers and regressors, understanding layer types.
+### Part 3: Natural Language Processing - Understanding Text
 
-* **Chapter 5: State-of-the-art in deep learning: Transformers**
-    * **Summary:** A theoretical and practical breakdown of the Transformer architecture, including self-attention mechanisms.
-    * **Skills:** Implementing Transformers, understanding Attention mechanisms.
+| Chapter | Title | Summary |
+| :--- | :--- | :--- |
+| **09** | [NLP: Sentiment Analysis](Chapter_09_NLP_with_TensorFlow_Sentiment_Analysis.ipynb) | Processing text data with **LSTMs**. Topics include tokenization, embedding layers, and handling class imbalance. |
+| **10** | [NLP: Language Modeling](Chapter_10_Natural_language_processing_with_TensorFlow_Language_modeling.ipynb) | Generative AI foundations. Building a **GRU**-based model to generate text and measuring performance with **Perplexity**. |
+| **11** | [Seq2Seq Learning: Part 1](Chapter_11_Sequence_to_sequence_learning_Part_1.ipynb) | Building a **Machine Translation** system (English to German) using an Encoder-Decoder RNN architecture and Teacher Forcing. |
+| **12** | [Seq2Seq Learning: Part 2](Chapter_12_Sequence_to_sequence_learning_Part_2.ipynb) | Enhancing translation with **Bahdanau Attention**. Implementing custom Keras layers to visualize alignment heatmaps. |
+| **13** | [Transformers in Practice](Chapter_13_Transformers.ipynb) | Using **BERT** and **Hugging Face** for downstream tasks like Spam Classification and Question Answering (SQuAD). |
 
-### Part 2: Look Ma, No Hands! Deep Networks in the Real World
+### Part 4: Production and MLOps
 
-* **Chapter 6: Teaching machines to see: Image classification with CNNs**
-    * **Summary:** Advanced image classification using complex CNN architectures like InceptionNet. Includes exploratory data analysis (EDA) for images.
-    * **Skills:** Building state-of-the-art image classifiers, handling real-world image data.
+| Chapter | Title | Summary |
+| :--- | :--- | :--- |
+| **14** | [TensorBoard](Chapter_14_TensorBoard_Big_brother_of_TensorFlow.ipynb) | Visualizing training metrics, debugging weights with histograms, and projecting high-dimensional embeddings. |
+| **15** | [TFX and MLOps](Chapter_15_TFX_MLOps_and_deploying_models_with_TensorFlow.ipynb) | Building an end-to-end production pipeline with **TensorFlow Extended (TFX)**. Data validation, transformation, training, and deployment with **Docker**. |
 
-* **Chapter 7: Teaching machines to see better: Improving CNNs and making them confess**
-    * **Summary:** Techniques to reduce overfitting (dropout, augmentation) and interpret model decisions (Grad-CAM).
-    * **Skills:** Regularization, model interpretability/explainability.
+### Appendices
 
-* **Chapter 8: Telling things apart: Image segmentation**
-    * **Summary:** Tackling semantic segmentation tasks using architectures like DeepLabv3 and U-Net.
-    * **Skills:** Pixel-level classification, advanced computer vision tasks.
+| Appx | Title | Summary |
+| :--- | :--- | :--- |
+| **A** | [Environment Setup](Appendix_A_Environment_Setup.ipynb) | Step-by-step guide to installing TensorFlow, GPU drivers, and library dependencies. |
+| **B** | [CV Deep Dive](Appendix_B_Computer_Vision.ipynb) | Technical implementation of **Grad-CAM** for nested/complex models (like InceptionResNetV2). |
+| **C** | [NLP Deep Dive](Appendix_C_NLP_Attention_Deep_Dive.ipynb) | Visualizing **Positional Encodings** and **Attention Masks** (Look-Ahead Mask) to understand Transformer geometry. |
 
-* **Chapter 9: Natural language processing with TensorFlow: Sentiment analysis**
-    * **Summary:** Processing text data for sentiment analysis using LSTM networks and word embeddings.
-    * **Skills:** NLP preprocessing, sequence classification, working with text data.
+---
 
-* **Chapter 10: Natural language processing with TensorFlow: Language modeling**
-    * **Summary:** Generating text using GRUs and Language Models. Covers decoding strategies like Beam Search.
-    * **Skills:** Text generation, advanced sequence modeling.
+## 🛠️ Tools & Technologies
 
-### Part 3: Advanced Deep Networks for Complex Problems
-
-* **Chapter 11: Sequence-to-sequence learning: Part 1**
-    * **Summary:** Building an Encoder-Decoder architecture for machine translation (English to German).
-    * **Skills:** Seq2Seq modeling, text translation pipelines.
-
-* **Chapter 12: Sequence-to-sequence learning: Part 2**
-    * **Summary:** Enhancing Seq2Seq models with the Bahdanau Attention mechanism.
-    * **Skills:** Implementing custom Attention layers, improving translation quality.
-
-* **Chapter 13: Transformers**
-    * **Summary:** Advanced applications of Transformers using BERT and Hugging Face libraries for tasks like Question Answering.
-    * **Skills:** Transfer learning with BERT, using Hugging Face Transformers.
-
-* **Chapter 14: TensorBoard: Big brother of TensorFlow**
-    * **Summary:** Using TensorBoard for visualization, metric tracking, and profiling model performance.
-    * **Skills:** Model monitoring, debugging, performance profiling.
-
-* **Chapter 15: TFX: MLOps and deploying models with TensorFlow**
-    * **Summary:** Building end-to-end MLOps pipelines using TensorFlow Extended (TFX) for production deployment.
-    * **Skills:** MLOps, model serving, creating production pipelines.
-
-## 3. Tools & Technologies
-* **Language:** Python 3.x
-* **Core Library:** TensorFlow 2.x, Keras
-* **Data Processing:** NumPy, Pandas
+* **Core Framework:** TensorFlow 2.x, Keras
+* **Data Processing:** NumPy, Pandas, TensorFlow Datasets (TFDS)
+* **NLP:** NLTK, Hugging Face Transformers, TensorFlow Text
+* **Deployment:** TFX, Docker, TensorFlow Serving
 * **Visualization:** Matplotlib, TensorBoard
-* **Environment:** Jupyter Notebook
 
-## 4. Learning Outcome
-By completing the notebooks in this repository, a learner will transition from a basic understanding of ML concepts to a proficient Deep Learning practitioner capable of:
-1.  Architecting custom neural networks from scratch.
-2.  Debugging and optimizing models for performance and accuracy.
-3.  Deploying models into production environments using industry-standard MLOps practices.
+## 🧠 Learning Outcome
+
+After completing this repository, you will have transitioned from a student of Machine Learning to a practitioner capable of:
+1.  **Architecting** custom neural networks for Vision and NLP tasks.
+2.  **Debugging** models using professional visualization tools.
+3.  **Deploying** scalable ML pipelines that handle data validation and model serving in production environments.
+
+---
+
+## 🤝 Credits
+All theoretical concepts and base code structures are derived from *TensorFlow in Action* by Thushan Ganegedara. This repository adapts and expands on those examples for educational purposes.
